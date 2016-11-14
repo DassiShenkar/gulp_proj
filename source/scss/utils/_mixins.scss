@@ -1,0 +1,13 @@
+@mixin reset {
+    padding: 0px;
+    margin: 0px;
+}
+
+@mixin drop-shadow($size: 2px, $color: rgba(0,0,0,0.5)) {
+    text-shadow: $size $size $size $color, $size (-$size) $size $color, (-$size) $size $size $color, (-$size) (-$size) $size $color;
+}
+
+@mixin bgrImg($image) {
+    background: $color-dark url('../images/' + $image) 50% 50% no-repeat;
+    background-size: cover;
+}
